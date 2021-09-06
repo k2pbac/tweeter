@@ -9,6 +9,12 @@ header {
   background-image: url("https://www.transparenttextures.com/patterns/blizzard.png");
 }
 
+#tsparticles {
+  position: absolute;
+  height: 400px;
+  width: 100vw;
+}
+
 header h2 {
   color: #ffffff;
 }
