@@ -1,0 +1,18 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px !important;
+  width: 100vw;
+
+  background-color: #ffbe00;
+  background-image: url("https://www.transparenttextures.com/patterns/blizzard.png");
+}
+
+header h2 {
+  color: #ffffff;
+}
+
+header h2 span {
+  font-weight: normal;
+}

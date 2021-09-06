@@ -34,9 +34,3 @@ nav p span {
 i {
   color: red;
 }
-
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
