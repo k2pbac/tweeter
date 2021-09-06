@@ -9,13 +9,21 @@ nav {
   justify-content: space-between;
 }
 
+nav div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 nav span {
   font-family: "Bungee", cursive;
   font-size: 32px;
 }
+nav p {
+  margin: 5px;
+}
 
 nav p span {
-  display: inline;
   font-weight: bold;
   font-size: 24px;
   font-family: "Source Sans Pro", sans-serif;
@@ -23,6 +31,4 @@ nav p span {
 
 i {
   color: red;
-  display: inherit !important;
-  text-align: center !important;
 }
