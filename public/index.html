@@ -45,13 +45,14 @@
       type="text/javascript"
       src="/scripts/composer-char-counter.js"
     ></script>
+    <script type="text/javascript" src="/scripts/composer.js"></script>
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
       <span>tweeter</span>
-      <div>
+      <div id="hideArrows">
         <p><span>Write</span> a<button id="displayForm">new</button>tweet</p>
         <i class="fas fa-angle-double-down"></i>
       </div>
@@ -94,6 +95,7 @@
         <div id="tweets-container"></div>
       </main>
     </div>
+    <i id="floatingUp" class="fas fa-angle-double-up"></i>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"
       integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg=="

@@ -14,7 +14,6 @@ $(document).ready(function () {
 
   $("main.container form").on("submit", function (e) {
     const data = $(this).serialize();
-    console.log(data.length);
     if (
       data.slice(5).length &&
       data.slice(5) !== null &&

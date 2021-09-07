@@ -37,3 +37,17 @@ main.container {
 div.content-flow {
   margin-top: 120px;
 }
+
+i#floatingUp {
+  display: none;
+  position: sticky;
+  right: 50px;
+  bottom: 50px;
+  z-index: 9999;
+  float: right;
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  padding: 1.8rem;
+}
