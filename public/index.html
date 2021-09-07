@@ -40,6 +40,10 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script
+      type="text/javascript"
+      src="/scripts/composer-char-counter.js"
+    ></script>
   </head>
 
   <body>
@@ -74,6 +78,7 @@
             rows="1"
             oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'
           ></textarea>
+          <span class="error">Maximum 140 characters!</span>
           <div>
             <button type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
