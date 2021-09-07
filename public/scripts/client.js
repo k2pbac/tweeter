@@ -6,7 +6,10 @@ $(document).ready(function () {
   );
 
   $("#displayForm").on("click", () => {
-    $(".new-tweet").fadeToggle("slow", "linear");
+    $(".new-tweet").fadeToggle("slow", "linear", () => {
+      $("#tweet-text").val("");
+      $("#tweet-text").focus();
+    });
   });
 
   $("main.container form").on("submit", function (e) {

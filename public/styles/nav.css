@@ -41,8 +41,11 @@ nav p button {
 
 nav i {
   color: red;
+}
+
+nav i:hover {
   animation-name: example;
-  animation-duration: 4s;
+  animation-duration: 2s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -51,15 +54,15 @@ nav i {
 
 @keyframes example {
   0% {
-    transform: translate(0px, 6px);
+    transform: translate(0px, -3px);
   }
   50% {
-    transform: translate(0px, -6px);
+    transform: translate(0px, 3px);
   }
   75% {
-    transform: translate(0px, 6px);
+    transform: translate(0px, -3px);
   }
   100% {
-    transform: translate(0px, -6px);
+    transform: translate(0px, 3px);
   }
 }
