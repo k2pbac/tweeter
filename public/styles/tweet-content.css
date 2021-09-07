@@ -11,6 +11,7 @@ article.tweet-content p {
   padding-left: 1rem;
   font-weight: 400;
   padding-bottom: 1rem;
+  word-wrap: break-word;
 }
 article.tweet-content hr {
   border: 2px solid #545149;

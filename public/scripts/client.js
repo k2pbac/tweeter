@@ -6,21 +6,31 @@ $(document).ready(function () {
   );
 
   $("main.container form").on("submit", function (e) {
-    e.preventDefault();
     const data = $(this).serialize();
+    console.log(data.length);
     if (
       data.slice(5).length &&
       data.slice(5) !== null &&
       data.slice(5).length <= 140
     ) {
+      $("#tweet-text").val("");
       $.ajax({
         method: "POST",
         url: "/tweets",
         data,
       }).done(function (response) {
-        console.log("success");
+        loadTweets();
       });
+    } else if (!data.slice(5).length) {
+      $(this).find("#tweet-text").siblings(".error").fadeOut();
+      $(this).find("#tweet-text").addClass("invalid-input");
+      $(this)
+        .find("#tweet-text")
+        .siblings(".error")
+        .html("Please enter a valid tweet!");
+      $(this).find("#tweet-text").siblings(".error").fadeIn();
     }
+    e.preventDefault();
   });
 
   const loadTweets = () => {
@@ -28,6 +38,7 @@ $(document).ready(function () {
       method: "GET",
       url: "/tweets",
     }).done(function (response) {
+      $("#tweets-container").html("");
       renderTweets(response);
     });
   };
@@ -41,7 +52,9 @@ const createTweetElement = (tweet) => {
   const $tweetHeaderContent = `<div><img src='${tweet.user.avatars}'><span>${tweet.user.name}</span></div><span class="muted">${tweet.user.handle}</span> `;
   const $tweetHeader = $(`<header>${$tweetHeaderContent}</header>`);
 
-  const $tweetMain = $(`<main><p>${tweet.content.text}</p> <hr /></main>`);
+  const $tweetMain = $(
+    `<main><p>${escape(tweet.content.text)}</p> <hr /></main>`
+  );
   const $tweetFooter = $(`<footer><span>${time}</span>
   <div>
     <a href="#/!"><i class="fas fa-flag"></i></a>
@@ -61,8 +74,16 @@ const renderTweets = function (tweets) {
   // loops through tweets
   // calls createTweetElement for each tweet
   // takes return value and appends it to the tweets container
-
+  tweets.sort((a, b) => {
+    return b.created_at - a.created_at;
+  });
   for (const tweet of tweets) {
     $("#tweets-container").append(createTweetElement(tweet));
   }
+};
+
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
 };
