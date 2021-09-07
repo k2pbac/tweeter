@@ -33,3 +33,7 @@ main.container {
   background-color: inherit;
   margin-bottom: 2rem;
 }
+
+div.content-flow {
+  margin-top: 120px;
+}

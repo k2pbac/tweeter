@@ -56,61 +56,49 @@
         <i class="fas fa-angle-double-down"></i>
       </div>
     </nav>
+
     <div id="tsparticles"></div>
-    <header class="nav-header">
-      <div>
-        <img src="/images/profile-hex.png" />
-      </div>
-      <br />
-      <div>
-        <h2>Kris <span>Bachan</span></h2>
-      </div>
-    </header>
+    <div class="content-flow">
+      <header class="nav-header">
+        <div>
+          <img src="/images/profile-hex.png" />
+        </div>
+        <br />
+        <div>
+          <h2>Kris <span>Bachan</span></h2>
+        </div>
+      </header>
 
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-      <section class="new-tweet">
-        <h2>Compose Tweet</h2>
-        <form method="POST" action="/tweets">
-          <label for="tweet-text">What are you humming about?</label>
-          <textarea
-            name="text"
-            id="tweet-text"
-            rows="1"
-            oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'
-          ></textarea>
-          <span class="error">Maximum 140 characters!</span>
-          <div>
-            <button type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-        </form>
-      </section>
+      <!-- Page-specific (main) content here -->
+      <main class="container">
+        <section class="new-tweet">
+          <h2>Compose Tweet</h2>
+          <form method="POST" action="/tweets">
+            <label for="tweet-text">What are you humming about?</label>
+            <textarea
+              name="text"
+              id="tweet-text"
+              rows="1"
+              oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'
+            ></textarea>
+            <span class="error">Maximum 140 characters!</span>
+            <div>
+              <button type="submit">Tweet</button>
+              <output name="counter" class="counter" for="tweet-text"
+                >140</output
+              >
+            </div>
+          </form>
+        </section>
 
-      <article class="tweet-content">
-        <header>
-          <div>
-            <i class="far fa-grin-beam"></i>
-            <span>Kris</span>
-          </div>
-          <span class="muted">@Bachan</span>
-        </header>
-        <main>
-          <p>
-            My mama always said, ‘Life was like a box of chocolates. You never
-            know what you’re gonna get.'
-          </p>
-          <hr />
-        </main>
-        <footer>
-          <span>10 days ago</span>
-          <div>
-            <a href=""><i class="fas fa-flag"></i></a>
-            <a href=""><i class="fas fa-retweet"></i></a>
-            <a href=""><i class="fas fa-heart"></i></a>
-          </div>
-        </footer>
-      </article>
-    </main>
+        <div id="tweets-container"></div>
+      </main>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"
+      integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </body>
 </html>

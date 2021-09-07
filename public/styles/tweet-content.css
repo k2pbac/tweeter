@@ -10,6 +10,7 @@ article.tweet-content {
 article.tweet-content p {
   padding-left: 1rem;
   font-weight: 400;
+  padding-bottom: 1rem;
 }
 article.tweet-content hr {
   border: 2px solid #545149;
@@ -19,21 +20,32 @@ article.tweet-content span {
 }
 
 /* Tweet header css */
-article.tweet-content i {
+article.tweet-content header i {
   font-size: 3rem;
   margin-right: 1rem;
 }
 article.tweet-content header {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   margin-bottom: 3.5rem;
 }
 article.tweet-content span.muted {
   padding-right: 1rem;
   opacity: 0.4;
-  font-weight: 400;
   color: #4056a1;
+}
+
+article.tweet-content span {
+  font-weight: 400;
+}
+
+article.tweet-content header div {
+  display: flex;
+  align-items: center;
+}
+article.tweet-content header div img {
+  padding-right: 1rem;
 }
 
 /* Tweet footer css */
@@ -45,6 +57,7 @@ article.tweet-content footer i {
   color: #4056a1;
   font-size: 1rem;
   transition: color 0.2s ease-out;
+  margin-right: 1rem;
 }
 
 article.tweet-content footer span {
