@@ -33,6 +33,33 @@ nav p span {
   font-family: "Source Sans Pro", sans-serif;
 }
 
+nav p button {
+  background-color: #4056a1;
+  border: none;
+  color: white;
+}
+
 nav i {
   color: red;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  position: relative;
+}
+
+@keyframes example {
+  0% {
+    transform: translate(0px, 6px);
+  }
+  50% {
+    transform: translate(0px, -6px);
+  }
+  75% {
+    transform: translate(0px, 6px);
+  }
+  100% {
+    transform: translate(0px, -6px);
+  }
 }

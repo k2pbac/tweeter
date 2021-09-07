@@ -5,6 +5,10 @@ $(document).ready(function () {
     function () {}
   );
 
+  $("#displayForm").on("click", () => {
+    $(".new-tweet").fadeToggle("slow", "linear");
+  });
+
   $("main.container form").on("submit", function (e) {
     const data = $(this).serialize();
     console.log(data.length);

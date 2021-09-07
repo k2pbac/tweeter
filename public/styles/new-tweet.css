@@ -34,7 +34,6 @@ section.new-tweet label {
   font-weight: bold;
   position: relative;
   color: gray;
-  /* bottom: -15px; */
 }
 
 section.new-tweet div {
