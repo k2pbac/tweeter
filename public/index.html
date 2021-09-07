@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:wght@300;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
     <link
@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweet-content.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -56,7 +57,7 @@
       </div>
     </nav>
     <div id="tsparticles"></div>
-    <header>
+    <header class="nav-header">
       <div>
         <img src="/images/profile-hex.png" />
       </div>
@@ -85,6 +86,31 @@
           </div>
         </form>
       </section>
+
+      <article class="tweet-content">
+        <header>
+          <div>
+            <i class="far fa-grin-beam"></i>
+            <span>Kris</span>
+          </div>
+          <span class="muted">@Bachan</span>
+        </header>
+        <main>
+          <p>
+            My mama always said, ‘Life was like a box of chocolates. You never
+            know what you’re gonna get.'
+          </p>
+          <hr />
+        </main>
+        <footer>
+          <span>10 days ago</span>
+          <div>
+            <a href=""><i class="fas fa-flag"></i></a>
+            <a href=""><i class="fas fa-retweet"></i></a>
+            <a href=""><i class="fas fa-heart"></i></a>
+          </div>
+        </footer>
+      </article>
     </main>
   </body>
 </html>

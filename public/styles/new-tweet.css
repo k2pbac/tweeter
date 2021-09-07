@@ -1,11 +1,11 @@
-section {
+section.new-tweet {
   display: flex;
   justify-content: center;
   flex-direction: column;
   color: #545149;
 }
 
-section form {
+section.new-tweet form {
   display: flex;
   flex-direction: column;
 }
@@ -30,23 +30,23 @@ textarea#tweet-text:active {
   text-decoration: none;
 }
 
-section label {
+section.new-tweet label {
   font-weight: bold;
   position: relative;
   color: gray;
   /* bottom: -15px; */
 }
 
-section div {
+section.new-tweet div {
   font-family: "Bungee", cursive;
   margin-top: 1rem;
 }
 
-section div button {
+section.new-tweet div button {
   color: #ffffff;
   background-color: #4056a1;
 }
-section div output {
+section.new-tweet div output {
   float: right;
 }
 

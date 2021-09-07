@@ -1,4 +1,4 @@
-header {
+header.nav-header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,10 +15,10 @@ header {
   width: 100vw;
 }
 
-header h2 {
+header.nav-header h2 {
   color: #ffffff;
 }
 
-header h2 span {
+header.nav-header h2 span {
   font-weight: normal;
 }

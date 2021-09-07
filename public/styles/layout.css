@@ -31,4 +31,5 @@ main.container {
   margin: auto;
   max-width: 90%;
   background-color: inherit;
+  margin-bottom: 2rem;
 }
