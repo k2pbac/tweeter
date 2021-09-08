@@ -5,10 +5,9 @@ $(document).ready(function () {
     function () {}
   );
 
-  $("#displayForm").on("click", () => {
-    $(".new-tweet").fadeToggle("slow", "linear", () => {
-      $("#tweet-text").val("");
-      $("#tweet-text").focus();
+  $("#displayForm").on("click", function () {
+    $(".new-tweet").fadeToggle("slow", "linear", function () {
+      $(this).find("form textarea").focus();
     });
   });
 
@@ -19,7 +18,7 @@ $(document).ready(function () {
       data.slice(5) !== null &&
       data.slice(5).length <= 140
     ) {
-      $("#tweet-text").val("");
+      $(this).find("#tweet-text").val("");
       $.ajax({
         method: "POST",
         url: "/tweets",

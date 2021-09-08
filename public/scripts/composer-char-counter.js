@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $("#tweet-text").on("input", function (event) {
+  $("form textarea").on("input", function (event) {
     let length = $(this).val().length;
 
     if (140 - length < 0) {

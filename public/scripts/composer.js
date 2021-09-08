@@ -1,7 +1,9 @@
 $(document).ready(function () {
   $("#floatingUp").on("click", () => {
     $(window).scrollTop(0);
-    $("#tweet-text").focus();
+    $(".new-tweet").fadeIn("slow", "linear", function () {
+      $(this).find("form textarea").focus();
+    });
   });
 
   $(window).scroll(function (event) {
