@@ -44,7 +44,7 @@ nav i {
 }
 
 nav i:hover {
-  animation-name: example;
+  animation-name: arrowMovement;
   animation-duration: 2s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
@@ -52,7 +52,7 @@ nav i:hover {
   position: relative;
 }
 
-@keyframes example {
+@keyframes arrowMovement {
   0% {
     transform: translate(0px, -3px);
   }

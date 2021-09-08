@@ -6,7 +6,7 @@ $(document).ready(function () {
   );
 
   $("#displayForm").on("click", function () {
-    $(".new-tweet").fadeToggle("slow", "linear", function () {
+    $(".new-tweet").slideToggle("slow", function () {
       $(this).find("form textarea").focus();
     });
   });
@@ -18,7 +18,8 @@ $(document).ready(function () {
       data.slice(5) !== null &&
       data.slice(5).length <= 140
     ) {
-      $(this).find("#tweet-text").val("");
+      $(this).find("textarea").val("");
+      $(this).find("output").html(140);
       $.ajax({
         method: "POST",
         url: "/tweets",
@@ -38,18 +39,18 @@ $(document).ready(function () {
     e.preventDefault();
   });
 
-  const loadTweets = () => {
-    $.ajax({
-      method: "GET",
-      url: "/tweets",
-    }).done(function (response) {
-      $("#tweets-container").html("");
-      renderTweets(response);
-    });
-  };
-
   loadTweets();
 });
+
+const loadTweets = () => {
+  $.ajax({
+    method: "GET",
+    url: "/tweets",
+  }).done(function (response) {
+    $("#tweets-container").html("");
+    renderTweets(response);
+  });
+};
 
 const createTweetElement = (tweet) => {
   const time = timeago.format(tweet.created_at);

@@ -27,11 +27,12 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
-main.container {
+.container {
   margin: auto;
   max-width: 90%;
   background-color: inherit;
   margin-bottom: 2rem;
+  padding-top: 3rem;
 }
 
 div.content-flow {
@@ -50,4 +51,17 @@ i#floatingUp {
   border-radius: 50%;
   font-size: 1.8rem;
   padding: 1.8rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 50%;
+    margin-top: 100px;
+    margin-right: 60px;
+    padding-top: 0px;
+  }
+  .content-flow {
+    display: flex;
+    justify-content: space-between;
+  }
 }
