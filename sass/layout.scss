@@ -6,7 +6,6 @@
 html {
   box-sizing: border-box;
 }
-
 *,
 *:before,
 *:after {
@@ -16,6 +15,7 @@ html {
 /*
  * Global layout stuff
  */
+
 body {
   color: #545149;
   background-color: #f4f1ec;
@@ -26,6 +26,7 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
 .container {
   margin: auto;
   max-width: 90%;
@@ -59,7 +60,6 @@ i#floatingUp {
     margin-right: 60px;
     padding-top: 0px;
   }
-
   .content-flow {
     display: flex;
   }

@@ -1,7 +1,10 @@
+$blue: #4056a1;
+$darkGrey: #545149;
+
 /* Tweet element css */
 article.tweet-content {
   margin-top: 4rem;
-  border: 4px #545149 solid;
+  border: 4px $darkGrey solid;
   padding: 1.5rem;
   transition: box-shadow 0.2s linear;
 }
@@ -13,11 +16,9 @@ article.tweet-content p {
   padding-bottom: 1rem;
   word-wrap: break-word;
 }
-
 article.tweet-content hr {
-  border: 2px solid #545149;
+  border: 2px solid $darkGrey;
 }
-
 article.tweet-content span {
   font-weight: 300;
 }
@@ -27,14 +28,12 @@ article.tweet-content header i {
   font-size: 3rem;
   margin-right: 1rem;
 }
-
 article.tweet-content header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 3.5rem;
 }
-
 article.tweet-content span.muted {
   padding-right: 1rem;
   opacity: 0.4;
@@ -49,7 +48,6 @@ article.tweet-content header div {
   display: flex;
   align-items: center;
 }
-
 article.tweet-content header div img {
   padding-right: 1rem;
 }
@@ -59,7 +57,6 @@ article.tweet-content footer {
   display: flex;
   justify-content: space-between;
 }
-
 article.tweet-content footer i {
   color: #4056a1;
   font-size: 1rem;

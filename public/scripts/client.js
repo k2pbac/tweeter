@@ -80,11 +80,9 @@ const renderTweets = function (tweets) {
   // loops through tweets
   // calls createTweetElement for each tweet
   // takes return value and appends it to the tweets container
-  tweets.sort((a, b) => {
-    return b.created_at - a.created_at;
-  });
+
   for (const tweet of tweets) {
-    $("#tweets-container").append(createTweetElement(tweet));
+    $("#tweets-container").prepend(createTweetElement(tweet));
   }
 };
 

@@ -1,8 +1,11 @@
+$blue: #4056a1;
+$darkGrey: #545149;
+
 section.new-tweet {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  color: #545149;
+  color: $darkGrey;
 }
 
 section.new-tweet form {
@@ -12,7 +15,7 @@ section.new-tweet form {
 
 section.new-tweet textarea {
   border: none;
-  border-bottom: 4px solid #545149;
+  border-bottom: 4px solid $darkGrey;
   background-color: inherit;
   outline: none;
   resize: none;
@@ -43,9 +46,8 @@ section.new-tweet div {
 
 section.new-tweet div button {
   color: #ffffff;
-  background-color: #4056a1;
+  background-color: $blue;
 }
-
 section.new-tweet div output {
   float: right;
 }
