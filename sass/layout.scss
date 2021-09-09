@@ -56,9 +56,10 @@ i#floatingUp {
 @media screen and (min-width: 1085px) {
   .container {
     max-width: 50%;
-    margin-top: 100px;
+    width: 50%;
     margin-right: 60px;
-    padding-top: 0px;
+    padding-top: 100px;
+    transition: padding 0.7s ease-out;
   }
   .content-flow {
     display: flex;
@@ -66,6 +67,9 @@ i#floatingUp {
 }
 
 @media screen and (max-width: 1084px) {
+  .container {
+    transition: padding 0.7s ease-out;
+  }
   div.content-flow {
     margin-top: 0px;
   }

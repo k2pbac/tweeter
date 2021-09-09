@@ -6,8 +6,17 @@ $(document).ready(function () {
   );
 
   $("#displayForm").on("click", function () {
-    $(".new-tweet").slideToggle("slow", function () {
+    $(".new-tweet").slideToggle(0.5, function (event) {
       $(this).find("form textarea").focus();
+
+      if ($(this).css("display") == "none") {
+        console.log("Here2");
+
+        $(".container").attr("style", "padding-top: 40px");
+      } else {
+        console.log("Here");
+        $(".container").attr("style", "padding-top: 100px");
+      }
     });
   });
 

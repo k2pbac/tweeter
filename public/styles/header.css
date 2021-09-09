@@ -59,6 +59,9 @@ header.nav-header div:nth-child(2) {
     justify-content: flex-end;
     align-items: center;
   }
+  header.nav-header div:nth-child(2) a {
+    color: rgba(255, 255, 255, 0.842);
+  }
   header.nav-header div:nth-child(2) i {
     margin-right: 1rem;
   }
