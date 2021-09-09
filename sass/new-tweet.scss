@@ -3,6 +3,11 @@ $darkGrey: #545149;
 $large-font: "Bungee", cursive;
 $small-font: "Source Sans Pro", sans-serif;
 
+@mixin font($font-family, $font-size) {
+  font-family: $font-family;
+  font-size: $font-size;
+}
+
 @mixin vertical-align($align: stretch) {
   display: flex;
   flex-direction: column;

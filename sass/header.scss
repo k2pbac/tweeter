@@ -43,4 +43,8 @@ header.nav-header {
   #tsparticles {
     @include largeScreen;
   }
+  header.nav-header div,
+  header.nav-header {
+    padding-top: 2rem;
+  }
 }
