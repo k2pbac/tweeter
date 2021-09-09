@@ -12,7 +12,6 @@ nav {
   left: 0;
   z-index: 9999;
 }
-
 nav div {
   display: flex;
   flex-direction: column;
@@ -38,26 +37,29 @@ nav button {
 nav i {
   color: red;
 }
-nav i:hover {
+nav i {
   animation-name: arrowMovement;
   animation-duration: 2s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
   position: relative;
 }
 
 @keyframes arrowMovement {
-  0% {
-    transform: translate(0px, -3px);
+  0%, 100% {
+    top: -5px;
   }
   50% {
-    transform: translate(0px, 3px);
+    top: 5px;
   }
-  75% {
-    transform: translate(0px, -3px);
+}
+@media screen and (max-width: 1084px) {
+  nav,
+button {
+    background-color: transparent;
   }
-  100% {
-    transform: translate(0px, 3px);
+  nav button,
+button button {
+    background-color: transparent;
   }
 }

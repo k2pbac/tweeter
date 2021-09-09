@@ -16,7 +16,7 @@ $(document).ready(function () {
     if (
       data.slice(5).length &&
       data.slice(5) !== null &&
-      data.slice(5).length <= 140
+      data.slice(5).replace(" ", "").length <= 140
     ) {
       $(this).find("textarea").val("");
       $(this).find("output").html(140);

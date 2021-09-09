@@ -7,15 +7,11 @@ $darkGrey: #545149;
   justify-content: $justify;
 }
 
-/* Tweet element css */
 article.tweet-content {
   margin-top: 4rem;
   border: 4px solid $darkGrey;
   padding: 1.5rem;
   transition: box-shadow 0.2s linear;
-}
-
-article.tweet-content {
   /* Tweet main content css */
   p {
     padding-left: 1rem;

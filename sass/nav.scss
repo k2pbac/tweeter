@@ -1,5 +1,5 @@
 $blue: #4056a1;
-$light-orange: #ffbe00;
+$light-orange: #ffbf00;
 
 $large-font: "Bungee", cursive;
 $small-font: "Source Sans Pro", sans-serif;
@@ -30,9 +30,7 @@ nav {
   top: 0;
   left: 0;
   z-index: 9999;
-}
 
-nav {
   div {
     @include vertical-align($align: center);
   }
@@ -54,27 +52,31 @@ nav {
   i {
     color: red;
   }
-  i:hover {
+  i {
     animation-name: arrowMovement;
     animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
     position: relative;
   }
 }
 
 @keyframes arrowMovement {
-  0% {
-    transform: translate(0px, -3px);
+  0%,
+  100% {
+    top: -5px;
   }
   50% {
-    transform: translate(0px, 3px);
+    top: 5px;
   }
-  75% {
-    transform: translate(0px, -3px);
-  }
-  100% {
-    transform: translate(0px, 3px);
+}
+
+@media screen and (max-width: 1084px) {
+  nav,
+  button {
+    background-color: transparent;
+    button {
+      background-color: transparent;
+    }
   }
 }

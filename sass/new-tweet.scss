@@ -17,12 +17,10 @@ $small-font: "Source Sans Pro", sans-serif;
 section.new-tweet {
   @include vertical-align;
   color: $darkGrey;
-}
-
-section.new-tweet {
   //Form section css
   form {
     @include vertical-align;
+    position: relative;
   }
   textarea {
     border: none;
@@ -61,15 +59,20 @@ section.new-tweet {
       float: right;
     }
   }
-  textarea.invalid-input {
-    border-bottom: 4px solid red;
-    color: red;
-  }
   .error {
     display: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: auto;
     color: red;
+    text-shadow: 0px 0px 0px red;
     font-weight: bold;
     text-align: center;
+  }
+  .addFont {
+    color: red;
+    text-shadow: 0px 0px 0px black;
   }
 }
