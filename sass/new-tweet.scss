@@ -8,59 +8,58 @@ section.new-tweet {
   color: $darkGrey;
 }
 
-section.new-tweet form {
-  display: flex;
-  flex-direction: column;
-}
+section.new-tweet {
+  //Form section css
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  textarea {
+    border: none;
+    border-bottom: 4px solid $darkGrey;
+    background-color: inherit;
+    outline: none;
+    resize: none;
+    font-size: 1.1rem;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    color: transparent;
+    text-shadow: 0px 0px 0px black;
+    margin-top: 1em;
+  }
+  textarea:active {
+    outline: none;
+    text-decoration: none;
+  }
 
-section.new-tweet textarea {
-  border: none;
-  border-bottom: 4px solid $darkGrey;
-  background-color: inherit;
-  outline: none;
-  resize: none;
-  font-size: 1.1rem;
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 600;
-  padding-bottom: 1rem;
-  color: transparent;
-  text-shadow: 0px 0px 0px black;
-  margin-top: 1em;
-}
-
-section.new-tweet textarea:active {
-  outline: none;
-  text-decoration: none;
-}
-
-section.new-tweet label {
-  font-weight: bold;
-  position: relative;
-  color: gray;
-}
-
-section.new-tweet div {
-  font-family: "Bungee", cursive;
-  margin-top: 1rem;
-}
-
-section.new-tweet div button {
-  color: #ffffff;
-  background-color: $blue;
-}
-section.new-tweet div output {
-  float: right;
-}
-
-section.new-tweet textarea.invalid-input {
-  border-bottom: 4px solid red;
-  color: red;
-}
-
-.error {
-  display: none;
-  width: auto;
-  color: red;
-  font-weight: bold;
-  text-align: center;
+  label {
+    font-weight: bold;
+    position: relative;
+    color: gray;
+  }
+  div {
+    font-family: "Bungee", cursive;
+    margin-top: 1rem;
+  }
+  div {
+    button {
+      color: #ffffff;
+      background-color: $blue;
+    }
+    output {
+      float: right;
+    }
+  }
+  textarea.invalid-input {
+    border-bottom: 4px solid red;
+    color: red;
+  }
+  .error {
+    display: none;
+    width: auto;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+  }
 }

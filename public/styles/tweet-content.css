@@ -6,76 +6,65 @@ article.tweet-content {
   transition: box-shadow 0.2s linear;
 }
 
-/* Tweet main content css */
+article.tweet-content {
+  /* Tweet main content css */
+  /* Tweet header css */
+  /* Tweet footer css */
+}
 article.tweet-content p {
   padding-left: 1rem;
   font-weight: 400;
   padding-bottom: 1rem;
   word-wrap: break-word;
 }
-
 article.tweet-content hr {
   border: 2px solid #545149;
 }
-
 article.tweet-content span {
   font-weight: 300;
 }
-
-/* Tweet header css */
 article.tweet-content header i {
   font-size: 3rem;
   margin-right: 1rem;
 }
-
+article.tweet-content header div {
+  display: flex;
+  align-items: center;
+}
+article.tweet-content header div img {
+  padding-right: 1rem;
+}
 article.tweet-content header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 3.5rem;
 }
-
 article.tweet-content span.muted {
   padding-right: 1rem;
   opacity: 0.4;
   color: #4056a1;
 }
-
 article.tweet-content span {
   font-weight: 400;
 }
-
-article.tweet-content header div {
-  display: flex;
-  align-items: center;
-}
-
-article.tweet-content header div img {
-  padding-right: 1rem;
-}
-
-/* Tweet footer css */
 article.tweet-content footer {
   display: flex;
   justify-content: space-between;
 }
-
 article.tweet-content footer i {
   color: #4056a1;
   font-size: 1rem;
   transition: color 0.2s ease-out;
   margin-right: 1rem;
 }
-
 article.tweet-content footer span {
   font-size: 1rem;
   font-weight: 400;
 }
-
-article.tweet-content:hover {
-  box-shadow: rgba(64, 86, 161, 0.2) 10px 10px;
-}
-
 article.tweet-content footer i:hover {
   color: rgba(173, 131, 63, 0.548);
+}
+article.tweet-content :hover {
+  box-shadow: rgba(64, 86, 161, 0.2) 10px 10px;
 }

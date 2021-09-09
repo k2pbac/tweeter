@@ -8,18 +8,17 @@ header.nav-header {
   background-image: url("https://www.transparenttextures.com/patterns/blizzard.png");
 }
 
+header.nav-header h2 {
+  color: #ffffff;
+}
+header.nav-header h2 span {
+  font-weight: normal;
+}
+
 #tsparticles {
   position: absolute;
   height: 400px;
   width: 100vw;
-}
-
-header.nav-header h2 {
-  color: #ffffff;
-}
-
-header.nav-header h2 span {
-  font-weight: normal;
 }
 
 @media screen and (min-width: 1024px) {
