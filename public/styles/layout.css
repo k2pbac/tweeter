@@ -62,6 +62,5 @@ i#floatingUp {
   }
   .content-flow {
     display: flex;
-    justify-content: space-between;
   }
 }
