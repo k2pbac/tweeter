@@ -58,7 +58,7 @@ const loadTweets = () => {
     method: "GET",
     url: "/tweets",
   }).done(function (response) {
-    $("#tweets-container").html("");
+    $("#tweets-container").empty();
     renderTweets(response);
   });
 };
