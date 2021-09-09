@@ -4,6 +4,8 @@ $light-orange: #ffbf00;
 $large-font: "Bungee", cursive;
 $small-font: "Source Sans Pro", sans-serif;
 
+//Mixins for alignment and fonts
+
 @mixin horizontal-align($align: stretch) {
   display: flex;
   justify-content: space-between;
@@ -39,10 +41,10 @@ nav {
   }
   p {
     margin: 5px;
-  }
-  p span {
-    font-weight: bold;
-    @include font($small-font, 24px);
+    span {
+      font-weight: bold;
+      @include font($small-font, 24px);
+    }
   }
   button {
     background-color: $blue;
@@ -51,8 +53,6 @@ nav {
   }
   i {
     color: red;
-  }
-  i {
     animation-name: arrowMovement;
     animation-duration: 2s;
     animation-timing-function: linear;
@@ -61,6 +61,7 @@ nav {
   }
 }
 
+//animation for top arrow to show and hide form
 @keyframes arrowMovement {
   0%,
   100% {

@@ -1,25 +1,27 @@
 $(document).ready(function () {
+  // Add Particles to header element (small bubbles floating)
   tsParticles.loadJSON(
     "tsparticles",
     "https://s3-us-west-2.amazonaws.com/s.cdpn.io/199011/XjRprX_particles.json?",
     function () {}
   );
 
+  //Display the form when the top right button is clicked
   $("#displayForm").on("click", function () {
+    //Toggle the textarea to be visible or not
     $(".new-tweet").slideToggle(0.5, function (event) {
       $(this).find("form textarea").focus();
 
+      //Check if the textarea is currently visible, set padding to make flush with the header
       if ($(this).css("display") == "none") {
-        console.log("Here2");
-
         $(".container").attr("style", "padding-top: 40px");
       } else {
-        console.log("Here");
         $(".container").attr("style", "padding-top: 100px");
       }
     });
   });
 
+  //on form submit prevent default and submit post request if conditions met
   $("main.container form").on("submit", function (e) {
     const data = $(this).serialize();
     if (

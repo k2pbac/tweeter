@@ -24,20 +24,6 @@ header.nav-header div:nth-child(2) {
   width: 100vw;
 }
 
-@media screen and (min-width: 1085px) {
-  header.nav-header {
-    margin-left: 5rem;
-    margin-top: 100px;
-    width: 30%;
-    padding-top: 2rem;
-  }
-
-  #tsparticles {
-    margin-left: 5rem;
-    margin-top: 100px;
-    width: 30%;
-  }
-}
 @media screen and (max-width: 1084px) {
   header.nav-header {
     height: 540px;
@@ -49,6 +35,15 @@ header.nav-header div:nth-child(2) {
 @media screen and (min-width: 1084px) {
   header.nav-header {
     position: fixed;
+    margin-left: 5rem;
+    margin-top: 100px;
+    width: 30%;
+    padding-top: 2rem;
+  }
+  header.nav-header #tsparticles {
+    margin-left: 5rem;
+    margin-top: 100px;
+    width: 30%;
   }
   header.nav-header div:nth-child(2) {
     background-color: #4056a1;

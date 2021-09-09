@@ -27,6 +27,7 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
+//Div container of the main content where the form and tweets are
 .container {
   margin: auto;
   max-width: 90%;
@@ -35,10 +36,12 @@ body {
   padding-top: 3rem;
 }
 
+//div container contains the header and main elements (excludes nav)
 div.content-flow {
   margin-top: 120px;
 }
 
+//css for stretch icon to go to top of page
 i#floatingUp {
   display: none;
   position: sticky;

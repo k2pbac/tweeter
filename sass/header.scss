@@ -1,6 +1,7 @@
 $light-orange: #d49f00;
 $blue: #4056a1;
 
+//Mixins for screen size and alignment
 @mixin largeScreen {
   margin-left: 5rem;
   margin-top: 100px;
@@ -18,6 +19,7 @@ $blue: #4056a1;
   align-items: center;
 }
 
+//css for header element - contains the person photo, name, and connect info
 header.nav-header {
   @include vertical-align;
   @include headerSize;
@@ -35,18 +37,10 @@ header.nav-header {
   }
 }
 
+//css for particles canvas created by particlesJS
 #tsparticles {
   position: absolute;
   @include headerSize;
-}
-@media screen and (min-width: 1085px) {
-  header.nav-header {
-    @include largeScreen;
-    padding-top: 2rem;
-  }
-  #tsparticles {
-    @include largeScreen;
-  }
 }
 
 @media screen and (max-width: 1084px) {
@@ -60,6 +54,12 @@ header.nav-header {
 @media screen and(min-width: 1084px) {
   header.nav-header {
     position: fixed;
+    @include largeScreen;
+    padding-top: 2rem;
+
+    #tsparticles {
+      @include largeScreen;
+    }
 
     div:nth-child(2) {
       background-color: $blue;

@@ -21,6 +21,12 @@ article.tweet-content hr {
 article.tweet-content span {
   font-weight: 300;
 }
+article.tweet-content header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3.5rem;
+}
 article.tweet-content header i {
   font-size: 3rem;
   margin-right: 1rem;
@@ -33,19 +39,13 @@ article.tweet-content header div {
 article.tweet-content header div img {
   padding-right: 1rem;
 }
-article.tweet-content header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 3.5rem;
+article.tweet-content span {
+  font-weight: 400;
 }
-article.tweet-content span.muted {
+article.tweet-content span .muted {
   padding-right: 1rem;
   opacity: 0.4;
   color: #4056a1;
-}
-article.tweet-content span {
-  font-weight: 400;
 }
 article.tweet-content footer {
   display: flex;

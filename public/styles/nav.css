@@ -36,8 +36,6 @@ nav button {
 }
 nav i {
   color: red;
-}
-nav i {
   animation-name: arrowMovement;
   animation-duration: 2s;
   animation-timing-function: linear;

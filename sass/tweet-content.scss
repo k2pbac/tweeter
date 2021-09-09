@@ -29,6 +29,8 @@ article.tweet-content {
   }
   /* Tweet header css */
   header {
+    @include horizontal-align($align: center, $justify: space-between);
+    margin-bottom: 3.5rem;
     i {
       font-size: 3rem;
       margin-right: 1rem;
@@ -40,24 +42,17 @@ article.tweet-content {
       padding-right: 1rem;
     }
   }
-  header {
-    @include horizontal-align($align: center, $justify: space-between);
-    margin-bottom: 3.5rem;
-  }
-  span.muted {
-    padding-right: 1rem;
-    opacity: 0.4;
-    color: #4056a1;
-  }
   span {
     font-weight: 400;
+    .muted {
+      padding-right: 1rem;
+      opacity: 0.4;
+      color: #4056a1;
+    }
   }
-
   /* Tweet footer css */
   footer {
     @include horizontal-align($align: stretch, $justify: space-between);
-  }
-  footer {
     i {
       color: #4056a1;
       font-size: 1rem;
