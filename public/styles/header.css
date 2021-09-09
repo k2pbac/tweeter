@@ -39,6 +39,7 @@ header.nav-header div:nth-child(2) {
     width: 30%;
     height: 390px;
     z-index: 9999;
+    position: fixed;
   }
 
   header.nav-header {

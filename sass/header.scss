@@ -57,6 +57,7 @@ header.nav-header {
     @include largeScreen;
     height: 390px;
     z-index: 9999;
+    position: fixed;
   }
   header.nav-header {
     position: fixed;
