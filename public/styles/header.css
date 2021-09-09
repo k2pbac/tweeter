@@ -34,8 +34,7 @@ header.nav-header h2 span {
     width: 30%;
   }
 
-  header.nav-header div,
-header.nav-header {
+  header.nav-header div {
     padding-top: 2rem;
   }
 }
