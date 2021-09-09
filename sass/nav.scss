@@ -1,14 +1,29 @@
 $blue: #4056a1;
+$large-font: "Bungee", cursive;
+$small-font: "Source Sans Pro", sans-serif;
+
+@mixin horizontal-align($align: stretch) {
+  display: flex;
+  justify-content: space-between;
+  align-items: $align;
+}
+@mixin vertical-align($align: stretch) {
+  display: flex;
+  flex-direction: column;
+  align-items: $align;
+}
+@mixin font($font-family, $font-size) {
+  font-family: $font-family;
+  font-size: $font-size;
+}
 
 nav {
+  @include horizontal-align($align: center);
   height: 120px;
   width: 100vw;
   background-color: $blue;
   color: #ffffff;
   padding: 0 1.5em;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
@@ -17,21 +32,17 @@ nav {
 
 nav {
   div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include vertical-align($align: center);
   }
   span {
-    font-family: "Bungee", cursive;
-    font-size: 32px;
+    @include font($large-font, 32px);
   }
   p {
     margin: 5px;
   }
   p span {
     font-weight: bold;
-    font-size: 24px;
-    font-family: "Source Sans Pro", sans-serif;
+    @include font($small-font, 24px);
   }
   button {
     background-color: $blue;

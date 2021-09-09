@@ -1,10 +1,16 @@
 $blue: #4056a1;
 $darkGrey: #545149;
 
+@mixin horizontal-align($align: stretch, $justify: flex-start) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+}
+
 /* Tweet element css */
 article.tweet-content {
   margin-top: 4rem;
-  border: 4px $darkGrey solid;
+  border: 4px solid $darkGrey;
   padding: 1.5rem;
   transition: box-shadow 0.2s linear;
 }
@@ -19,6 +25,8 @@ article.tweet-content {
   }
   hr {
     border: 2px solid $darkGrey;
+    color: $darkGrey;
+    background-color: $darkGrey;
   }
   span {
     font-weight: 300;
@@ -30,17 +38,14 @@ article.tweet-content {
       margin-right: 1rem;
     }
     div {
-      display: flex;
-      align-items: center;
+      @include horizontal-align($align: center);
     }
     div img {
       padding-right: 1rem;
     }
   }
   header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include horizontal-align($align: center, $justify: space-between);
     margin-bottom: 3.5rem;
   }
   span.muted {
@@ -54,8 +59,7 @@ article.tweet-content {
 
   /* Tweet footer css */
   footer {
-    display: flex;
-    justify-content: space-between;
+    @include horizontal-align($align: stretch, $justify: space-between);
   }
   footer {
     i {
@@ -72,7 +76,7 @@ article.tweet-content {
       color: rgba(173, 131, 63, 0.548);
     }
   }
-  :hover {
-    box-shadow: rgba(64, 86, 161, 0.2) 10px 10px;
-  }
+}
+article.tweet-content:hover {
+  box-shadow: rgba(64, 86, 161, 0.2) 10px 10px;
 }

@@ -1,12 +1,24 @@
 $light-orange: #ffbe00;
+@mixin largeScreen {
+  margin-left: 5rem;
+  margin-top: 100px;
+  width: 30%;
+}
 
-header.nav-header {
+@mixin headerSize {
+  height: 400px !important;
+  width: 100vw;
+}
+
+@mixin vertical-align {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 400px !important;
-  width: 100vw;
+}
 
+header.nav-header {
+  @include vertical-align;
+  @include headerSize;
   background-color: $light-orange;
   background-image: url("https://www.transparenttextures.com/patterns/blizzard.png");
 }
@@ -22,20 +34,13 @@ header.nav-header {
 
 #tsparticles {
   position: absolute;
-  height: 400px;
-  width: 100vw;
+  @include headerSize;
 }
 @media screen and (min-width: 1024px) {
   header.nav-header {
-    width: 30%;
-  }
-  header.nav-header {
-    margin-left: 5rem;
-    margin-top: 100px;
+    @include largeScreen;
   }
   #tsparticles {
-    width: 30%;
-    margin-top: 100px;
-    margin-left: 5rem;
+    @include largeScreen;
   }
 }
