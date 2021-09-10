@@ -39,13 +39,11 @@ $(document).ready(function () {
         loadTweets();
       });
     } else if (!data.slice(5).length) {
-      $(this).find("#tweet-text").siblings(".error").fadeOut();
+      const $textArea = $(this).find("#tweet-text").siblings(".error");
       $(this).find("#tweet-text").addClass("invalid-input");
-      $(this)
-        .find("#tweet-text")
-        .siblings(".error")
-        .html("Please enter a valid tweet!");
-      $(this).find("#tweet-text").siblings(".error").fadeIn();
+      $($textArea).fadeOut();
+      $($textArea).html("Please enter a valid tweet!");
+      $($textArea).fadeIn();
     }
     e.preventDefault();
   });

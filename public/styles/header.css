@@ -20,13 +20,13 @@ header.nav-header div:nth-child(2) {
 
 #tsparticles {
   position: absolute;
-  height: 540px;
+  height: 480px;
   width: 100vw;
 }
 
 @media screen and (max-width: 1084px) {
   header.nav-header {
-    height: 540px;
+    height: 480px;
   }
   header.nav-header img {
     margin-top: 120px;
