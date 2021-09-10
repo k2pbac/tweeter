@@ -6,6 +6,24 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Final Product
 
+### Multiple screen sizes available
+
+<br>
+
+#### Smaller Screens (1084px or less)
+
+> Single column view with no top navigation bar.
+
+!["Small view 1084px and smaller"](docs/small-view.gif)
+
+<br>
+
+#### Large Screens (1084px or larger)
+
+> Multiple column view with the logo and name on the left side and the form and tweet-content on the right side.
+
+!["Large view 1084px and larger"](docs/large-view.gif)
+
 ## Getting Started
 
 1. Fork this repository, then clone your fork of this repository.
@@ -19,3 +37,4 @@ This repository is the starter code for the project: Students will fork and clon
 - Node 5.10.x or above
 - Chance
 - ParticlesJS
+- Hover.css
