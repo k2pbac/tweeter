@@ -1,3 +1,5 @@
+require("firebase-functions/logger/compat");
+
 $(document).ready(function () {
   // Add Particles to header element (small bubbles floating)
   tsParticles.loadJSON(
@@ -62,9 +64,9 @@ const loadTweets = () => {
 };
 
 const createTweetElement = (tweet) => {
+  console.log(tweet);
   const time = timeago.format(tweet.created_at);
-
-  const $tweetHeaderContent = `<div><img src='${tweet.user.avatars}'><span>${tweet.user.name}</span></div><span class="muted">${tweet.user.handle}</span> `;
+  const $tweetHeaderContent = `<div></div> `;
   const $tweetHeader = $(`<header>${$tweetHeaderContent}</header>`);
 
   const $tweetMain = $(
