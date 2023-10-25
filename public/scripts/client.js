@@ -1,5 +1,3 @@
-require("firebase-functions/logger/compat");
-
 $(document).ready(function () {
   // Add Particles to header element (small bubbles floating)
   tsParticles.loadJSON(
