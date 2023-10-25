@@ -62,9 +62,8 @@ const loadTweets = () => {
 };
 
 const createTweetElement = (tweet) => {
-  console.log(tweet);
   const time = timeago.format(tweet.created_at);
-  const $tweetHeaderContent = `<div></div> `;
+  const $tweetHeaderContent = `<div><img src='${tweet.user.avatars}'><span>${tweet.user.name}</span></div><span class="muted">${tweet.user.handle}</span> `;
   const $tweetHeader = $(`<header>${$tweetHeaderContent}</header>`);
 
   const $tweetMain = $(
