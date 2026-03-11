@@ -1,10 +1,5 @@
 $(document).ready(function () {
-  // Add Particles to header element (small bubbles floating)
-  tsParticles.loadJSON(
-    "tsparticles",
-    "https://s3-us-west-2.amazonaws.com/s.cdpn.io/199011/XjRprX_particles.json?",
-    function () {}
-  );
+
 
   //Display the form when the top right button is clicked
   $("#displayForm").on("click", function () {
