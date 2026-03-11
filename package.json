@@ -16,7 +16,6 @@
     "chance": "^1.0.2",
     "express": "^4.13.4",
     "hover.css": "^2.3.2",
-    "jquery-particles": "^2.0.0",
     "md5": "^2.1.0"
   },
   "devDependencies": {
