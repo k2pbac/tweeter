@@ -18,12 +18,6 @@ header.nav-header div:nth-child(2) {
   display: none;
 }
 
-#tsparticles {
-  position: absolute;
-  height: 480px;
-  width: 100vw;
-}
-
 @media screen and (max-width: 1084px) {
   header.nav-header {
     height: 480px;
@@ -33,14 +27,6 @@ header.nav-header div:nth-child(2) {
   }
 }
 @media screen and (min-width: 1084px) {
-  #tsparticles {
-    margin-left: 5rem;
-    margin-top: 100px;
-    width: 30%;
-    height: 390px;
-    z-index: 9999;
-    position: fixed;
-  }
 
   header.nav-header {
     position: fixed;

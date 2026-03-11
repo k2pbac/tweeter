@@ -37,12 +37,6 @@ header.nav-header {
   }
 }
 
-//css for particles canvas created by particlesJS
-#tsparticles {
-  position: absolute;
-  height: 480px;
-  width: 100vw;
-}
 
 @media screen and (max-width: 1084px) {
   header.nav-header {
@@ -53,12 +47,6 @@ header.nav-header {
   }
 }
 @media screen and(min-width: 1084px) {
-  #tsparticles {
-    @include largeScreen;
-    height: 390px;
-    z-index: 9999;
-    position: fixed;
-  }
   header.nav-header {
     position: fixed;
     @include largeScreen;
